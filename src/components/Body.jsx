@@ -1,5 +1,6 @@
 import useInfo from "../utils/useInfo";
 import Hero from "./Hero";
+import Services from "./Services";
 
 const Body = () => {
   const info = useInfo();
@@ -11,6 +12,7 @@ const Body = () => {
   return (
     <div>
       <Hero about={user.about} />
+      <Services services={user.services} />
     </div>
   );
 };

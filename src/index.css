@@ -2,6 +2,13 @@
   font-family: Gilroy;
 }
 
+.font-watermark {
+  font-family: "Your Creative Font", sans-serif;
+  font-size: 10rem;
+  z-index: 10;
+  opacity: 0.1;
+}
+
 .image-container {
   position: relative;
   width: 600px;
@@ -42,11 +49,27 @@
   color: #007bff;
 }
 
+.lis {
+  cursor: pointer;
+}
+
 @keyframes borderAnimation {
   0% {
     transform: scale(1);
   }
   100% {
     transform: scale(1.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .font-watermark {
+    font-size: 6rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .font-watermark {
+    font-size: 4.4rem; /* Adjust font size for even smaller screens */
   }
 }

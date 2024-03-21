@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import Portfolio from "./Portfolio";
 import Services from "./Services";
 import Skills from "./Skills";
+import Testimonial from "./Testimonial";
 
 const Body = () => {
   const info = useInfo();
@@ -19,6 +20,7 @@ const Body = () => {
       <Portfolio projects={user.projects} />
       <Skills skills={user.skills} />
       <About about={user.about} />
+      <Testimonial testimonials={user.testimonials} />
     </div>
   );
 };

@@ -3,7 +3,6 @@
 import "./Skills.css";
 
 const Skills = ({ skills }) => {
-  console.log(skills);
   return (
     <section className="container-fluid bg-dark text-white">
       <div className="container">

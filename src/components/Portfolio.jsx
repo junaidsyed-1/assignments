@@ -23,7 +23,7 @@ const AnimatedImage = ({ src, alt }) => {
 
 const Portfolio = ({ projects }) => {
   return (
-    <section className="container-fluid py-4">
+    <section id="portfolio" className="container-fluid py-4">
       <div className="container">
         <h1 className="text-center fw-bold">My Projects</h1>
         <div className="row">

@@ -19,7 +19,7 @@ const Hero = ({ about }) => {
   });
 
   return (
-    <section className="container-fluid mx-auto mt-5">
+    <section id="home" className="container-fluid mx-auto mt-5">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6">

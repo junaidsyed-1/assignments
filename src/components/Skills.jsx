@@ -4,7 +4,7 @@ import "./Skills.css";
 
 const Skills = ({ skills }) => {
   return (
-    <section className="container-fluid bg-dark text-white">
+    <section id="skills" className="container-fluid bg-dark text-white">
       <div className="container">
         <div className="skills-section">
           <h1 className="fw-bold text-center py-3 skills-header">My Skills</h1>

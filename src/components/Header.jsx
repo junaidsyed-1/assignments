@@ -1,10 +1,15 @@
+import { HashLink as Link } from "react-router-hash-link";
+
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <nav
+      className="navbar sticky-top navbar-expand-lg bg-dark"
+      data-bs-theme="dark"
+    >
       <div className="container-fluid mx-3">
-        <a className="navbar-brand " href="#">
+        <Link className="navbar-brand" to="/">
           Portfolio
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -22,39 +27,39 @@ const Header = () => {
             style={{ marginLeft: "auto" }}
           >
             <li className="nav-item">
-              <a className="nav-link text-light" aria-current="page" href="#">
+              <Link className="nav-link text-light" to="#home">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-light" aria-current="page" href="#">
+              <Link className="nav-link text-light" to="#about">
                 About
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-light" aria-current="page" href="#">
+              <Link className="nav-link text-light" to="#services">
                 Services
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-light" aria-current="page" href="#">
+              <Link className="nav-link text-light" to="#portfolio">
                 Portfolio
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-light" aria-current="page" href="#">
+              <Link className="nav-link text-light" to="#skills">
                 Skills
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-light" aria-current="page" href="#">
+              <Link className="nav-link text-light" to="#testimonials">
                 Testimonials
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-light" aria-current="page" href="#">
+              <Link className="nav-link text-light" to="#contact">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

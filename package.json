@@ -12,6 +12,8 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
+    "react-router-hash-link": "^2.4.3",
     "react-spring": "^9.7.3",
     "react-typewriter-hook": "^1.0.2",
     "wowjs": "^1.1.3"

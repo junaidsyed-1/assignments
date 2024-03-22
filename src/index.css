@@ -2,6 +2,10 @@
   font-family: Gilroy;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .font-watermark {
   font-family: "Your Creative Font", sans-serif;
   font-size: 10rem;

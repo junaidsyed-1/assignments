@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 const About = ({ about }) => {
   return (
-    <section className="container-fluid py-3 position-relative">
+    <section id="about" className="container-fluid py-3 position-relative">
       <div className="container">
         <h1 className="fw-bold text-center mb-4">About Me</h1>
         <div className="row">

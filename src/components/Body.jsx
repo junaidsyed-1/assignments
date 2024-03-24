@@ -5,6 +5,7 @@ import Portfolio from "./Portfolio";
 import Services from "./Services";
 import Skills from "./Skills";
 import Testimonial from "./Testimonial";
+import Timeline from "./Timeline";
 
 const Body = () => {
   const info = useInfo();
@@ -21,6 +22,7 @@ const Body = () => {
       <Skills skills={user.skills} />
       <About about={user.about} />
       <Testimonial testimonials={user.testimonials} />
+      <Timeline timeline={user.timeline} />
     </div>
   );
 };

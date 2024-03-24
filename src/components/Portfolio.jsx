@@ -22,6 +22,16 @@ const AnimatedImage = ({ src, alt }) => {
 };
 
 const Portfolio = ({ projects }) => {
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const handleProjectClick = (project) => {
+    setSelectedProject(project);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedProject(null);
+  };
+
   return (
     <section id="portfolio" className="container-fluid py-4">
       <div className="container">
@@ -57,7 +67,9 @@ const Portfolio = ({ projects }) => {
                 maxWidth: "400px",
                 margin: "0 10px 20px 10px",
                 boxSizing: "border-box",
+                cursor: "pointer",
               }}
+              onClick={() => handleProjectClick(project)}
             >
               <AnimatedImage src={project.image.url} alt="Project" />
               <p className="my-3 fw-regular text-info text-center">
@@ -67,6 +79,52 @@ const Portfolio = ({ projects }) => {
             </div>
           ))}
         </div>
+        {selectedProject && (
+          <div className="modal fade show" style={{ display: "block" }}>
+            <div className="modal-dialog modal-lg">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h5 className="modal-title">{selectedProject.title}</h5>
+                  <button
+                    type="button"
+                    className="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                    onClick={handleCloseModal}
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div className="modal-body">
+                  <AnimatedImage
+                    src={selectedProject.image.url}
+                    alt={selectedProject.title}
+                  />
+                  <p>Description: {selectedProject.description}</p>
+                  <p>Tech Stack: {selectedProject.techStack.join(", ")}</p>
+                  <p>GitHub URL: {selectedProject.githuburl}</p>
+                  <p>Live URL: {selectedProject.liveurl}</p>
+                </div>
+                <div className="modal-footer">
+                  <button
+                    type="button"
+                    className="btn btn-secondary"
+                    data-dismiss="modal"
+                    onClick={handleCloseModal}
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+        {selectedProject && (
+          <div
+            className="modal-backdrop fade show"
+            onClick={handleCloseModal}
+          ></div>
+        )}
       </div>
     </section>
   );

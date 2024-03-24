@@ -1,5 +1,6 @@
 import useInfo from "../utils/useInfo";
 import About from "./About";
+import Contact from "./Contact";
 import Hero from "./Hero";
 import Portfolio from "./Portfolio";
 import Services from "./Services";
@@ -23,6 +24,7 @@ const Body = () => {
       <About about={user.about} />
       <Testimonial testimonials={user.testimonials} />
       <Timeline timeline={user.timeline} />
+      <Contact about={user} />
     </div>
   );
 };

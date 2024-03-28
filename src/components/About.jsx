@@ -20,6 +20,7 @@ const About = ({ about }) => {
               }}
             />
           </div>
+
           <div className="col-lg-6 col-sm-12 text-left">
             <h4 className="fw-bold fs-1 text-warning-emphasis">
               {about.subTitle}

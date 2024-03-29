@@ -37,7 +37,6 @@ const About = ({ about }) => {
           </div>
         </div>
       </div>
-
       <div className="position-absolute top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center text-center ">
         <h1
           className="display-1 text-dark  font-watermark"

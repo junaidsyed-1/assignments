@@ -30,6 +30,7 @@ const Contact = ({ about }) => {
             </div>
           </div>
         </div>
+
         <div className="row">
           <div className="col">
             <div className="contact-form-container">

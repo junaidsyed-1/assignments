@@ -48,5 +48,4 @@ const About = ({ about }) => {
     </section>
   );
 };
-
 export default About;
